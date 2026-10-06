@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS CollegeDB;
+USE CollegeDB;
+SELECT DATABASE();
+
+CREATE TABLE Students(
+    StudentID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age TINYINT,
+    Email VARCHAR(100),
+    JoinDate DATE
+);
+
+SELECT * FROM Students;
